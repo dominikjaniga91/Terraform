@@ -1,10 +1,10 @@
 provider "aws" {
-  shared_credential_file = "D:\DevOps\Terraform\.aws\credentials"
-  profile                = "default"
   region                 = "eu-central-1"
+  profile                = "default"
+  shared_credentials_file = "D:/DevOps/Terraform/.aws/credentials"
 }
 
 resource "aws_s3_bucket" "tf_course" {
-  bucket = "tf-course-20210726"
+  bucket = "tf-course-20210726-dominik"
   acl	 = "private"
 }
